@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     die;
 }
 
-//* Générateur en ligne
+//* Générateur en ligne pour les script et les css
 // https://generatewp.com/register_script/
 
 /**************************
