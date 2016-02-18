@@ -53,3 +53,11 @@ function gn_scripts_back() {
 	wp_register_script('scripts-projet-back',plugins_url( '/js/scripts-projet-back.js', __FILE__), array('jquery'),'1.0',true);
 	wp_enqueue_script('scripts-projet-back');
 }
+
+
+/**************************
+* LIENS FICHIER PHP
+**************************/
+
+//* Appel autres fichiers PHP
+require_once(plugin_dir_path( __FILE__ ) . '/lib/func.template.php');
