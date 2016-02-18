@@ -60,4 +60,7 @@ function gn_scripts_back() {
 **************************/
 
 //* Appel autres fichiers PHP
-require_once(plugin_dir_path( __FILE__ ) . '/lib/func.template.php');
+// Fichier de functions pour WordPress
+require_once(plugin_dir_path( __FILE__ ) . '/lib/func.wordpress.php');
+// Fichier de functions pour Genesis
+require_once(plugin_dir_path( __FILE__ ) . '/lib/func.genesis.php');
