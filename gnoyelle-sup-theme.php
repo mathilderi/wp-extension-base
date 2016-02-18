@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: gnoyelle : Options du thème par Grégoire
+Plugin Name: gnoyelle : Options du thème Botanique
 Plugin URI: http://wwww.gregoirenoyelle.com
-Description: Toutes les options suplémentaires pour le thème
+Description: Toutes les options suplémentaires pour le thème Botanique
 Version: 1.0
 Author: Grégoire Noyelle
 Author URI: http://wwww.gregoirenoyelle.com
