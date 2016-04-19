@@ -19,8 +19,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**************************
-* VARIABLES GLOBALES
+* VARIABLES ET CONSTANTES GLOBALES
 **************************/
+define('GN_WP_PLUGIN_PATH', plugin_dir_path(__FILE__) );
 $my_plugin_name = 'WP Plugin Name';
 
 
@@ -31,8 +32,8 @@ $my_plugin_name = 'WP Plugin Name';
 
 //* Appel autres fichiers PHP
 // Fichier de functions pour WordPress
-require_once(plugin_dir_path( __FILE__ ) . '/lib/func.wordpress.php');
+include(plugin_dir_path( __FILE__ ) . '/lib/func.wordpress.php');
 // Fichier de functions pour Genesis
-require_once(plugin_dir_path( __FILE__ ) . '/lib/func.genesis.php');
+include(plugin_dir_path( __FILE__ ) . '/lib/func.genesis.php');
 // Fichier de functions pour intégrer des CSS et JS
-require_once(plugin_dir_path( __FILE__ ) . '/lib/func.enqueue.php');
+include(plugin_dir_path( __FILE__ ) . '/lib/func.enqueue.php');
