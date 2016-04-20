@@ -32,8 +32,8 @@ $my_plugin_name = 'WP Plugin Name';
 
 //* Appel autres fichiers PHP
 // Fichier de functions pour WordPress
-include(plugin_dir_path( __FILE__ ) . '/lib/func.wordpress.php');
+include_once(plugin_dir_path( __FILE__ ) . '/lib/func.wordpress.php');
 // Fichier de functions pour Genesis
-include(plugin_dir_path( __FILE__ ) . '/lib/func.genesis.php');
+include_once(plugin_dir_path( __FILE__ ) . '/lib/func.genesis.php');
 // Fichier de functions pour intégrer des CSS et JS
-include(plugin_dir_path( __FILE__ ) . '/lib/func.enqueue.php');
+include_once(plugin_dir_path( __FILE__ ) . '/lib/func.enqueue.php');
