@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**************************
 * VARIABLES ET CONSTANTES GLOBALES
 **************************/
-define('GN_WP_PLUGIN_PATH', plugin_dir_path(__FILE__) );
+// define('GN_WP_PLUGIN_PATH', plugin_dir_path(__FILE__) );
 $my_plugin_name = 'WP Plugin Name';
 
 
