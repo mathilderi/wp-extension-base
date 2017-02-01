@@ -1,4 +1,12 @@
-## Theme plugin
+# Base de plugin pour un thème WorPress
 
-* Add some special feature for a client project
-* Try to change nothing in the theme without using a child theme
+## Description
+
+* Base de travail pour créer un plugin WordPress
+* Actions sur le Front et le back
+* Installation des fichiers types: JS, les fonctions WordPress et CSS
+
+
+## Mise en garde
+
+**Attention** à bien changer les préfixes des différentes fonctions qui commencent toutes par gn_
