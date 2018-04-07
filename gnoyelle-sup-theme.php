@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: gnoyelle : Options du thème par Grégoire
-Plugin URI: http://wwww.gregoirenoyelle.com
-Description: Toutes les options suplémentaires pour le thème
-Version: 1.0
+Plugin Name: Base d'extension WordPress
+Plugin URI: https://wwww.gregoirenoyelle.com
+Description: Extension basique pour modifier le front ou le back.
+Version: 2.0
 Author: Grégoire Noyelle
 Author URI: http://wwww.gregoirenoyelle.com
 License: GPL2
