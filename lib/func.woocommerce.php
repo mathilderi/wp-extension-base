@@ -6,9 +6,17 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 	//* FRONT
 	// Ajout de texte avant les vignettes
-	add_action( 'woocommerce_before_shop_loop', 'gnwooc2_contenu_avant_vignette_2', 10);
-	function gnwooc2_contenu_avant_vignette_2() {
+	add_action( 'woocommerce_before_shop_loop', 'gnwooc2_contenu_avant_grille_produits', 10);
+	function gnwooc2_contenu_avant_grille_produits() {
 		echo '<h4 style="color:red;">Texte ajouté depuis le plugin Options pour WooCommerce</h4>';
+	}
+
+	//* EMAILS
+	add_action( 'woocommerce_email_footer', 'gnwooc2_ajouter_remarque', 5 );
+	function gnwooc2_ajouter_remarque() {
+		$output = '<h2 id="h2thanks">Avant de partir</h2>';
+		$output .= '<p id="pthanks">Merci de vous inscrire à la <a href="#">Newsletter</a> pour avoir plus d\'offres.</p>';
+		echo $output;
 	}
 
 } else {
