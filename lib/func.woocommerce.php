@@ -19,6 +19,24 @@ if ( class_exists( 'WooCommerce' ) ) {
 		echo $output;
 	}
 
+	//* BACK
+	// Ajouter des pays
+
+	add_filter( 'woocommerce_countries',  'handsome_bearded_guy_add_my_country' );
+	function handsome_bearded_guy_add_my_country( $countries ) {
+	  $new_countries = array(
+		'NIRE'  => __( 'Irlande du NORD', 'woocommerce' ),
+		);
+
+		return array_merge( $countries, $new_countries );
+	}
+
+	add_filter( 'woocommerce_continents', 'handsome_bearded_guy_add_my_country_to_continents' );
+	function handsome_bearded_guy_add_my_country_to_continents( $continents ) {
+		$continents['EU']['countries'][] = 'NIRE';
+		return $continents;
+	}
+
 } else {
 	// Notice dans le back-office au moment de la désactivation de WooCommerce
 	add_action('admin_notices','gnwooc2_warning_woocommerce_missing');
