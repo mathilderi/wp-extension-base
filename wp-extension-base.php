@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Base d'extension WordPress
+Plugin Name: Options pour WooCommerce
 Plugin URI: https://wwww.gregoirenoyelle.com
-Description: Extension basique pour modifier le front ou le back.
+Description: Changer des réglage de WooCommerce depuis une extension.
 Version: 2.0
 Author: Grégoire Noyelle
 Author URI: http://wwww.gregoirenoyelle.com
