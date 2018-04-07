@@ -1,8 +1,8 @@
-# Base de plugin pour un thème WorPress
+# Base d'extension pour WorPress
 
 ## Description
 
-* Base de travail pour créer un plugin WordPress
+* Base de travail pour créer une extension WordPress
 * Actions sur le Front et le back
 * Installation des fichiers types: JS, les fonctions WordPress et CSS
 
