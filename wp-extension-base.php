@@ -26,6 +26,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 //* Appel autres fichiers PHP
 // Fichier de functions pour WordPress
 include_once(plugin_dir_path( __FILE__ ) . '/lib/func.wordpress.php');
+// Fichier de functions pour Woocommerce
+include_once(plugin_dir_path( __FILE__ ) . '/lib/func.woocommerce.php');
 // Fichier de functions pour Genesis
 // include_once(plugin_dir_path( __FILE__ ) . '/lib/func.genesis.php');
 // Fichier de functions pour intégrer des CSS et JS
