@@ -11,7 +11,10 @@
 add_action('wp_enqueue_scripts','gnwooc2_styles_front', 999);
 function gnwooc2_styles_front() {
 	wp_register_style('gn-woocom-css', plugins_url( 'css/gn-woocom.css', dirname(__FILE__) ), array(), '1.0', 'all' );
-	wp_enqueue_style('gn-woocom-css');
+	// Enqueue CSS si WooCommerce est actif
+	if ( class_exists( 'WooCommerce' ) ) {
+		wp_enqueue_style('gn-woocom-css');
+	}
 }
 
 //* enqueue script front
