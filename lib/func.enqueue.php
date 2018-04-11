@@ -10,8 +10,8 @@
 //* enqueue style front
 add_action('wp_enqueue_scripts','woocom2_styles_front', 99);
 function woocom2_styles_front() {
-	wp_register_style('styles-projet-front', plugins_url( 'css/styles-projet-front.css', dirname(__FILE__) ), array(), '1.0', 'all' );
-	wp_enqueue_style('styles-projet-front');
+	wp_register_style('woocom-niv2', plugins_url( 'css/woocom-niv2.css', dirname(__FILE__) ), array(), '1.0', 'all' );
+	wp_enqueue_style('woocom-niv2');
 }
 
 //* enqueue script front
