@@ -30,3 +30,5 @@ include_once(plugin_dir_path( __FILE__ ) . '/lib/func.wordpress.php');
 // include_once(plugin_dir_path( __FILE__ ) . '/lib/func.genesis.php');
 // Fichier de functions pour intégrer des CSS et JS
 include_once(plugin_dir_path( __FILE__ ) . '/lib/func.enqueue.php');
+// Fichier de functions pour woocommerce
+include_once(plugin_dir_path( __FILE__ ) . '/lib/func.woocommerce.php');
