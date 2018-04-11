@@ -13,6 +13,9 @@ function woocom2_personnalisation_onglets($tabs){
 	$tabs['reviews']['priority'] = 1;
 	$tabs['description']['priority'] = 5;
 
+// condition pour que le champ ACF ne s'affiche que si il a un contenu
+if(get_field('woocom2_detail_composition_onglet')){
+
 	// Ajouter des onglets
 	$tabs['composition_textile']= array(
 		'title' => 'Composition Textile',
@@ -20,6 +23,8 @@ function woocom2_personnalisation_onglets($tabs){
 		'callback' => 'woocom2_onglet_produit_sur_mesure'
 
 	);
+
+	}
 	// ne pas oublier le point (concaténation) sinon seul le dernier s'affiche
 function woocom2_onglet_produit_sur_mesure(){
 	// récup champ ACF
