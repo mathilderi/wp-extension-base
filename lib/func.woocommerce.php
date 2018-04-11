@@ -22,8 +22,10 @@ function woocom2_personnalisation_onglets($tabs){
 	);
 	// ne pas oublier le point (concaténation) sinon seul le dernier s'affiche
 function woocom2_onglet_produit_sur_mesure(){
+	// récup champ ACF
+	$composition = get_field('woocom2_detail_composition_onglet');
 	$html = '<h2>Titre de mon onglet</h2>';
-	$html .= '<p>Le contenu de mon onglet</p>';
+	$html .= sprintf('<p>%s</p>',$composition);
 	echo $html;
 }
 
