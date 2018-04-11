@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Base d'extension WordPress
-Plugin URI: https://wwww.gregoirenoyelle.com
-Description: Extension basique pour modifier le front ou le back.
-Version: 2.0
-Author: Grégoire Noyelle
-Author URI: http://wwww.gregoirenoyelle.com
+Plugin Name: Personalisation de woocommerce Mathilde
+Plugin URI: https://wwww.mathilderivoire.fr
+Description: Réglages pour mon client X
+Version: 1.0
+Author: Mathilde Rivoire
+Author URI: https://wwww.mathilderivoire.fr
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Domain Path: /languages
