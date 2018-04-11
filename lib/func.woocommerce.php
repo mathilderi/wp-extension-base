@@ -13,7 +13,19 @@ function woocom2_personnalisation_onglets($tabs){
 	$tabs['reviews']['priority'] = 1;
 	$tabs['description']['priority'] = 5;
 
-	
+	// Ajouter des onglets
+	$tabs['composition_textile']= array(
+		'title' => 'Composition Textile',
+		'priority' => 40,
+		'callback' => 'woocom2_onglet_produit_sur_mesure'
+
+	);
+	// ne pas oublier le point (concaténation) sinon seul le dernier s'affiche
+function woocom2_onglet_produit_sur_mesure(){
+	$html = '<h2>Titre de mon onglet</h2>';
+	$html .= '<p>Le contenu de mon onglet</p>';
+	echo $html;
+}
 
 	return $tabs;
 }
