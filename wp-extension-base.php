@@ -31,4 +31,9 @@ include_once(plugin_dir_path( __FILE__ ) . '/lib/func.wordpress.php');
 // Fichier de functions pour intégrer des CSS et JS
 include_once(plugin_dir_path( __FILE__ ) . '/lib/func.enqueue.php');
 // Fichier de functions pour woocommerce
-include_once(plugin_dir_path( __FILE__ ) . '/lib/func.woocommerce.php');
+// Condition pour voir si woocommerce est actif
+if (class_exists('WooCommerce')){
+	include_once(plugin_dir_path( __FILE__ ) . '/lib/func.woocommerce.php');
+}
+// Fichier de functions pour woocommerce
+
